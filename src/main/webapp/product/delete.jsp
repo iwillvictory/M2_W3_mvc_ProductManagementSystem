@@ -8,33 +8,33 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Deleting customer</title>
+    <title>Deleting product</title>
 </head>
 <body>
-<h1>Delete customer</h1>
+<h1>Delete product</h1>
 <p>
-    <a href="customers">Back to customer list</a>
+    <a href="products">Back to product list</a>
 </p>
 <form method="post">
     <h3>Are you sure?</h3>
     <fieldset>
-        <legend>Customer information</legend>
+        <legend>product information</legend>
         <table>
             <tr>
                 <td>Name: </td>
-                <td>${requestScope["customer"].getName()}</td>
+                <td>${requestScope["product"].name}</td>
             </tr>
             <tr>
-                <td>Email: </td>
-                <td>${requestScope["customer"].getEmail()}</td>
+                <td>Price: </td>
+                <td>${requestScope["product"].price}</td>
             </tr>
             <tr>
-                <td>Address: </td>
-                <td>${requestScope["customer"].getAddress()}</td>
+                <td>Color: </td>
+                <td>${requestScope["product"].color}</td>
             </tr>
             <tr>
-                <td><input type="submit" value="Delete customer"></td>
-                <td><a href="customers">Back to customer list</a></td>
+                <td><input type="submit" value="Delete product"></td>
+                <td><a href="products">Back to product list</a></td>
             </tr>
         </table>
     </fieldset>

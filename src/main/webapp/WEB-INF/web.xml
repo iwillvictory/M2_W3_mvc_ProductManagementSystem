@@ -5,12 +5,12 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
     <servlet>
-        <servlet-name>customerServlet</servlet-name>
-        <servlet-class>controller.CustomerServlet</servlet-class>
+        <servlet-name>productServlet</servlet-name>
+        <servlet-class>controller.ProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>customerServlet</servlet-name>
-        <url-pattern>/customers</url-pattern>
+        <servlet-name>productServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
     </servlet-mapping>
 
 </web-app>

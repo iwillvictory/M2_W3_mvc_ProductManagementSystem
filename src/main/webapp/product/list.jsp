@@ -15,23 +15,23 @@
 <body>
 <h1>Customers</h1>
 <p>
-    <a href="customers?action=create">Create new customer</a>
+    <a href="products?action=create">Create new customer</a>
 </p>
 <table border="1">
     <tr>
         <td>Name</td>
-        <td>Email</td>
-        <td>Address</td>
+        <td>Price</td>
+        <td>Color</td>
         <td>Edit</td>
         <td>Delete</td>
     </tr>
-    <c:forEach items='${requestScope["customers"]}' var="customer">
+    <c:forEach items='${requestScope["products"]}' var="product">
         <tr>
-            <td><a href="customers?action=view&id=${customer.getId()}">${customer.getName()}</a></td>
-            <td>${customer.getEmail()}</td>
-            <td>${customer.getAddress()}</td>
-            <td><a href="customers?action=edit&id=${customer.getId()}">edit</a></td>
-            <td><a href="customers?action=delete&id=${customer.getId()}">delete</a></td>
+            <td><a href="products?action=view&id=${product.id}">${product.name}</a></td>
+            <td>${product.price}</td>
+            <td>${product.color}</td>
+            <td><a href="products?action=edit&id=${product.id}">edit</a></td>
+            <td><a href="products?action=delete&id=${product.id}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
